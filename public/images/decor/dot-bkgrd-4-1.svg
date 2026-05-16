@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c9e08f;
+      }
+
+      .cls-2 {
+        fill: #00dbe6;
+      }
+    </style>
+  </defs>
+  <circle class="cls-2" cx="196.12" cy="148.66" r="23.29"/>
+  <circle class="cls-2" cx="76.92" cy="307.17" r="14.03"/>
+  <circle class="cls-2" cx="196.12" cy="359.58" r="25.67"/>
+  <circle class="cls-1" cx="196.12" cy="446.14" r="25.67"/>
+  <circle class="cls-2" cx="196.12" cy="533.38" r="25.67"/>
+  <circle class="cls-2" cx="76.92" cy="450.01" r="14.03"/>
+  <circle class="cls-2" cx="76.92" cy="533" r="14.03"/>
+  <circle class="cls-1" cx="76.92" cy="578.98" r="14.03"/>
+  <circle class="cls-2" cx="322.08" cy="24.26" r="14.03"/>
+  <circle class="cls-2" cx="323.08" cy="169.35" r="14.03"/>
+  <circle class="cls-1" cx="322.45" cy="399.29" r="14.03"/>
+  <circle class="cls-1" cx="322.45" cy="359.84" r="14.03"/>
+  <circle class="cls-2" cx="322.58" cy="251.79" r="14.03"/>
+  <circle class="cls-2" cx="322.58" cy="169.25" r="14.03"/>
+  <circle class="cls-2" cx="322.08" cy="68.46" r="14.03"/>
+</svg>
