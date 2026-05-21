@@ -59,8 +59,7 @@ export function Hero() {
             src="https://api.leadconnectorhq.com/widget/form/EEJ792UCw3hfLSrTfLyQ"
             style={{
               width: "100%",
-              height: "100%",
-              minHeight: "1038px",
+              minHeight: "auto",
               border: "none",
               borderRadius: "8px",
               display: "block",
@@ -74,7 +73,7 @@ export function Hero() {
             data-deactivation-type="neverDeactivate"
             data-deactivation-value=""
             data-form-name="EMS_form1"
-            data-height="1038"
+            data-height="500"
             data-layout-iframe-id="inline-EEJ792UCw3hfLSrTfLyQ"
             data-form-id="EEJ792UCw3hfLSrTfLyQ"
             title="EMS_form1"
