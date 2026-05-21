@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit, Barlow } from "next/font/google";
 import "./globals.css";
+import { MetaPixel } from "@/components/meta-pixel";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -42,6 +43,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-background text-foreground font-sans">
         {children}
+        <MetaPixel />
       </body>
     </html>
   );

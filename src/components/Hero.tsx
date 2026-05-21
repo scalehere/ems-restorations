@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Script from "next/script";
 import { CheckIcon } from "@/components/icons";
 import { heroBullets, trustBadges } from "@/lib/content";
+import { GHLFormIframe } from "@/components/GHLFormIframe";
 
 export function Hero() {
   return (
@@ -55,34 +55,8 @@ export function Hero() {
           id="hero-form"
           className="bg-white rounded-xl shadow-2xl overflow-hidden w-full max-w-md mx-auto lg:ml-auto"
         >
-          <iframe
-            src="https://api.leadconnectorhq.com/widget/form/EEJ792UCw3hfLSrTfLyQ"
-            style={{
-              width: "100%",
-              minHeight: "auto",
-              border: "none",
-              borderRadius: "8px",
-              display: "block",
-            }}
-            id="inline-EEJ792UCw3hfLSrTfLyQ"
-            data-layout="{'id':'INLINE'}"
-            data-trigger-type="alwaysShow"
-            data-trigger-value=""
-            data-activation-type="alwaysActivated"
-            data-activation-value=""
-            data-deactivation-type="neverDeactivate"
-            data-deactivation-value=""
-            data-form-name="EMS_form1"
-            data-height="500"
-            data-layout-iframe-id="inline-EEJ792UCw3hfLSrTfLyQ"
-            data-form-id="EEJ792UCw3hfLSrTfLyQ"
-            title="EMS_form1"
-          />
+          <GHLFormIframe />
         </div>
-        <Script
-          src="https://link.msgsndr.com/js/form_embed.js"
-          strategy="lazyOnload"
-        />
       </div>
     </section>
   );
