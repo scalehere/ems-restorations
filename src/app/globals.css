@@ -139,8 +139,8 @@
 }
 
 /* Anchor offset — scroll-margin-top written as plain CSS because Tailwind v4
-   silently drops scroll-mt-[var(...)] in some Turbopack contexts (LESSONS #64/100).
-   The scroll-mt-[var(--nav-offset)] classes on each element stay as a fallback. */
+   silently drops arbitrary scroll-mt utilities in some Turbopack contexts.
+   The scroll-mt utility classes on each element stay as a fallback. */
 section[id] {
   scroll-margin-top: var(--nav-offset);
 }

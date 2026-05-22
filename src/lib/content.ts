@@ -93,7 +93,7 @@ export const tabContents: TabContent[] = [
       "Clear communication from start to finish",
       "Satisfaction guaranteed on every job",
     ],
-    imageSrc: "/images/tabs/tab-customer-first.jpg",
+    imageSrc: "/images/sections/hero-bg-joseph.webp",
     imageAlt: "EMS Restoration Customer First",
   },
   {
@@ -106,7 +106,7 @@ export const tabContents: TabContent[] = [
       "We document every detail to maximize your approved claim",
       "Goal: zero out-of-pocket on covered damage",
     ],
-    imageSrc: "/images/tabs/tab-insurance-experts.jpg",
+    imageSrc: "/images/tabs/tab-customer-first.jpg",
     imageAlt: "EMS Restoration Insurance Experts",
   },
   {

@@ -7,13 +7,13 @@ export function Hero() {
   return (
     <section className="relative isolate overflow-hidden bg-navy text-white">
       <Image
-        src="/images/sections/hero-bg.webp"
+        src="/images/sections/hero-bg-joseph.webp"
         alt=""
         fill
         priority
-        className="object-cover -z-10"
+        className="object-cover object-[30%_50%] md:object-center -z-10"
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-navy/95 via-navy/70 to-navy/40" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-navy/95 via-navy/80 to-navy/55" />
 
       <div className="mx-auto max-w-[1200px] px-6 py-20 lg:py-28 grid lg:grid-cols-[1.05fr_1fr] gap-12 items-center">
         <div className="text-white">
