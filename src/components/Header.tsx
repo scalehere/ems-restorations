@@ -50,7 +50,7 @@ function closeMobile() {
             <a
               href="#hero-form"
               onClick={(e) => smoothScrollToHash(e, "#hero-form")}
-              className="inline-flex items-center justify-center h-11 px-4 rounded-md bg-cyan hover:brightness-95 text-navy font-heading font-semibold uppercase tracking-wide text-xs transition whitespace-nowrap"
+              className="inline-flex items-center justify-center h-11 px-4 rounded-md bg-cyan hover:brightness-95 text-white font-heading font-semibold uppercase tracking-wide text-xs transition whitespace-nowrap"
             >
               Schedule an Appointment
             </a>
@@ -165,7 +165,7 @@ function closeMobile() {
           <div className="pt-4 flex flex-col gap-2">
             <a
               href={PHONE_HREF}
-              className="block w-full text-center py-3 rounded-md bg-cyan text-navy font-heading font-bold uppercase tracking-wide"
+              className="block w-full text-center py-3 rounded-md bg-cyan text-white font-heading font-bold uppercase tracking-wide"
             >
               Call {PHONE}
             </a>

@@ -45,6 +45,7 @@
   --color-cyan-deep: var(--cyan-deep);
   --color-section-muted: var(--section-muted);
   --color-green-accent: var(--green-accent);
+  --color-orange-accent: var(--orange-accent);
   --color-star: var(--star);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
@@ -62,17 +63,19 @@
   /* EMS Restoration brand colors.
      NOTE: variable names (--navy, --cyan) kept from the original Voda design to avoid
      touching 60+ Tailwind class references across components. Values are EMS now.
-       --navy        → warm charcoal (headings, body text, footer bg, dark CTA)
-       --cyan        → EMS orange (primary CTA bg, accent)
-       --cyan-deep   → deeper orange (hover, gradient endpoint)
+       --navy          → warm charcoal (headings, body text, footer bg, dark CTA)
+       --cyan          → EMS green (primary CTA bg, buttons, interactive)
+       --cyan-deep     → deeper green (hover, gradient endpoint)
+       --orange-accent → EMS orange (section label pills, flame accent — from logo)
        --section-muted → warm light gray (alt section bg)
-       --green-accent → EMS kelly green (badges, secondary accent)
+       --green-accent  → EMS kelly green (same value as --cyan; kept for direct refs)
   */
-  --navy: #1F2937;        /* warm charcoal */
+  --navy: #1F2937;            /* warm charcoal */
   --navy-light: #2A3441;
-  --cyan: #F57C20;        /* EMS orange */
-  --cyan-deep: #E66A0E;
-  --section-muted: #F5F1EB; /* warm light gray */
+  --cyan: #1E8E3E;            /* EMS green (primary) */
+  --cyan-deep: #166E2F;
+  --orange-accent: #F57C20;   /* EMS orange (accent) */
+  --section-muted: #F5F1EB;   /* warm light gray */
   --green-accent: #1E8E3E;
   --star: #FBBF24;
 
@@ -82,32 +85,32 @@
   --card-foreground: #1F2937;
   --popover: #ffffff;
   --popover-foreground: #1F2937;
-  --primary: #F57C20;
+  --primary: #1E8E3E;
   --primary-foreground: #ffffff;
   --secondary: #1F2937;
   --secondary-foreground: #ffffff;
   --muted: #F5F1EB;
   --muted-foreground: #525968;
-  --accent: #F57C20;
+  --accent: #1E8E3E;
   --accent-foreground: #ffffff;
   --destructive: oklch(0.577 0.245 27.325);
   --border: #e2dcd2;
   --input: #e2dcd2;
-  --ring: #F57C20;
-  --chart-1: #F57C20;
+  --ring: #1E8E3E;
+  --chart-1: #1E8E3E;
   --chart-2: #1F2937;
-  --chart-3: #1E8E3E;
+  --chart-3: #F57C20;
   --chart-4: #4b5878;
   --chart-5: #8893ac;
   --radius: 0.375rem;
   --sidebar: #ffffff;
   --sidebar-foreground: #1F2937;
-  --sidebar-primary: #F57C20;
+  --sidebar-primary: #1E8E3E;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #F5F1EB;
   --sidebar-accent-foreground: #1F2937;
   --sidebar-border: #e2dcd2;
-  --sidebar-ring: #F57C20;
+  --sidebar-ring: #1E8E3E;
 }
 
 @layer base {
@@ -149,7 +152,7 @@ section[id] {
 .section-bubble {
   display: inline-block;
   padding: 6px 24px;
-  background-color: var(--cyan);
+  background-color: var(--orange-accent);
   color: var(--navy);
   font-family: var(--font-outfit);
   font-size: 14px;

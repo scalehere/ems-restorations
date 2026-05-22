@@ -33,7 +33,7 @@ export function WhyEMSTabs() {
               className={cn(
                 "px-4 sm:px-6 py-3 rounded-md font-heading font-semibold text-sm sm:text-base uppercase tracking-wide transition border",
                 active === t.id
-                  ? "bg-cyan text-navy border-cyan"
+                  ? "bg-cyan text-white border-cyan"
                   : "bg-navy text-white border-navy hover:bg-navy-light",
               )}
             >
@@ -48,7 +48,7 @@ export function WhyEMSTabs() {
             className="absolute inset-0 -z-10"
             style={{
               backgroundImage:
-                "url('/images/decor/dots-bkgrd.svg'), linear-gradient(25deg, #1F2937 0%, #1F2937 50%, #F57C20 100%)",
+                "url('/images/decor/dots-bkgrd.svg'), linear-gradient(25deg, #1F2937 0%, #1F2937 50%, #1E8E3E 100%)",
               backgroundRepeat: "no-repeat, no-repeat",
               backgroundSize: "300px auto, cover",
               backgroundPosition: "top left, center",
@@ -62,7 +62,7 @@ export function WhyEMSTabs() {
                 <ul className="mt-6 space-y-3">
                   {current.bullets.map((b) => (
                     <li key={b} className="flex items-start gap-3 text-white">
-                      <span className="mt-1 grid place-items-center w-5 h-5 rounded-full bg-cyan text-navy shrink-0">
+                      <span className="mt-1 grid place-items-center w-5 h-5 rounded-full bg-cyan text-white shrink-0">
                         <CheckIcon className="w-3 h-3" />
                       </span>
                       <span className="text-base">{b}</span>
