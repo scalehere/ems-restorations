@@ -14,7 +14,7 @@ export function Hero() {
   return (
     <section className="relative isolate overflow-hidden bg-navy text-white">
       <Image
-        src="/images/sections/hero-bg-joseph.webp"
+        src="/images/sections/joseph-higa-owner-portrait.webp"
         alt=""
         fill
         priority

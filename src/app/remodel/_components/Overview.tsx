@@ -31,7 +31,7 @@ export function Overview() {
 
         <div className="relative">
           <Image
-            src="/images/sections/overview-remodel.jpg"
+            src="/images/sections/remodel-kitchen-navy-island.jpg"
             alt="EMS Restorations — completed kitchen remodel San Diego"
             width={800}
             height={800}

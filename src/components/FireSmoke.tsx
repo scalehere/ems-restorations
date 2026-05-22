@@ -26,8 +26,8 @@ export function FireSmoke() {
           </div>
         </div>
         <Image
-          src="/images/sections/commercial-mold.webp"
-          alt="EMS Restoration — Fire and Smoke Damage Restoration"
+          src="/images/sections/fire-damaged-kitchen-gutted.jpg"
+          alt="Fire-damaged kitchen interior — charred walls, burned appliances, soot damage"
           width={800}
           height={800}
           className="w-full rounded-2xl shadow-xl"

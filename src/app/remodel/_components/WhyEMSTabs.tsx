@@ -10,7 +10,7 @@ const tabs = [
     label: "Licensed & Permit-Ready",
     heading: "Fully Permitted, Start to Finish",
     body: "We pull every required permit and handle all inspections. Your remodel is done to code — protecting your home value and your safety.",
-    imageSrc: "/images/sections/hero-bg-joseph.webp",
+    imageSrc: "/images/sections/joseph-higa-owner-portrait.webp",
     imageAlt: "EMS Restorations — Joseph, owner",
   },
   {
@@ -18,7 +18,7 @@ const tabs = [
     label: "Honest, Locked-In Pricing",
     heading: "Your Quote Is Your Final Price",
     body: "No change orders for things we should have caught upfront. No hidden labor fees at the end. We price jobs honestly from day one.",
-    imageSrc: "/images/tabs/tab-customer-first.jpg",
+    imageSrc: "/images/tabs/remodel-kitchen-dark-cherry.jpg",
     imageAlt: "EMS Restorations — completed kitchen remodel",
   },
   {
@@ -26,7 +26,7 @@ const tabs = [
     label: "3D Design Preview",
     heading: "See It Before We Build It",
     body: "We create a 3D model of your finished project before construction begins. You approve every detail — layout, finishes, fixtures — before a single wall comes down.",
-    imageSrc: "/images/tabs/tab-3d-preview.jpg",
+    imageSrc: "/images/tabs/remodel-3d-design-mood-board.jpg",
     imageAlt: "EMS Restorations — design selections mood board",
   },
   {
@@ -34,7 +34,7 @@ const tabs = [
     label: "One Team, One Contact",
     heading: "No Getting Passed Around",
     body: "You work directly with Joseph and his crew from estimate to final walkthrough. No subcontractors disappearing. No being handed off to someone you've never met.",
-    imageSrc: "/images/tabs/tab-veteran-owned.jpg",
+    imageSrc: "/images/tabs/ems-van-branded.jpg",
     imageAlt: "EMS Restorations — branded company van",
   },
 ];

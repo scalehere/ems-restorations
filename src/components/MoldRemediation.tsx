@@ -5,7 +5,7 @@ export function MoldRemediation() {
     <section id="mold-remediation" className="bg-white py-16 lg:py-20 scroll-mt-[var(--nav-offset)]">
       <div className="mx-auto max-w-[1200px] px-6 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <Image
-          src="/images/sections/mold-remediation.jpg"
+          src="/images/sections/mold-black-growth-wall-cavity.jpg"
           alt="EMS Restoration — Mold Remediation Specialists"
           width={900}
           height={1000}
