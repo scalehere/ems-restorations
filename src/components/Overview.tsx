@@ -31,8 +31,8 @@ export function Overview() {
 
         <div className="relative">
           <Image
-            src="/images/sections/overview.webp"
-            alt="EMS Restoration — San Diego Water Damage Restoration"
+            src="/images/sections/water-damage-air-movers-living-room.jpg"
+            alt="EMS Restoration team actively drying and restoring a water-damaged home"
             width={800}
             height={800}
             className="w-full rounded-2xl shadow-2xl"
