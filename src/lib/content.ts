@@ -1,6 +1,5 @@
 import type {
   FaqItem,
-  GalleryItem,
   NavLink,
   ServiceCard,
   Stat,
@@ -82,11 +81,6 @@ export const testimonials: Testimonial[] = [
   },
 ];
 
-export const galleryItems: GalleryItem[] = [
-  { src: "/images/gallery/gallery-1.jpg", alt: "Kitchen Remodel — Before & After", caption: "View full gallery", href: "#" },
-  { src: "/images/gallery/gallery-2.jpg", alt: "Water Damage Restoration — Active Dryout", caption: "View full gallery", href: "#" },
-  { src: "/images/gallery/gallery-3.jpg", alt: "Bathroom Remodel — Custom Tile Shower", caption: "View full gallery", href: "#" },
-];
 
 export const tabContents: TabContent[] = [
   {

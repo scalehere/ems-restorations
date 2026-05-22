@@ -20,12 +20,6 @@ export interface Testimonial {
   initial?: string;
 }
 
-export interface GalleryItem {
-  src: string;
-  alt: string;
-  caption: string;
-  href: string;
-}
 
 export interface ProcessImage {
   src: string;
