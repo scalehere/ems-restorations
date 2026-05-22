@@ -6,8 +6,8 @@ Senior front-end developer. Mold-remediation landing page funnel; clean, modern,
 ## Project
 A single-page lead-gen funnel currently mirroring `myvoda.com/jersey-shore/mold-remediation/`. The eventual destination is an EMS Restorations (or other) rebrand — see HANDOFF for the rebrand checklist.
 
-Live: https://ems-restorations-funnel.vercel.app (private)
-Repo: https://github.com/scalehere/ems-restorations-funnel (private)
+Live: https://ems-restorations.vercel.app (private)
+Repo: https://github.com/scalehere/ems-restorations (private)
 
 ## Tech Stack
 - **Next.js 16** (App Router, React 19, TypeScript strict, Turbopack)
@@ -42,14 +42,15 @@ Trigger-load (only when the task touches the area):
 - Mid-session continuation / dirty working tree → `my_references/my_files/session-log.md` (last entry only)
 - Navigation map for `my_references/my_files/` → `my_references/my_files/INDEX.md`
 - UI bug reference → `my_references/screenshots/`
+- Colors, fonts, spacing, card style, legacy variable map → `.claude/docs/design-tokens.md`
 
 > **Note to fresh clones / external collaborators:** `my_references/` is gitignored — it's personal/local refs only. The committed code + this CLAUDE.md are the canonical project state. The user-level `~/.claude/CLAUDE.md` + `~/.claude/PLAYBOOK.md` cover universal rules (commit conventions, voice input, parallel sessions, etc.) and are also outside this repo.
 
 ## Design Direction
 
-EMS Restoration brand (updated 2026-05-20).
+EMS Restoration brand (updated 2026-05-22).
 
-- **Colors:** charcoal `#1F2937` (primary text + dark CTAs), orange `#F57C20` (primary CTA bg + accent), green `#1E8E3E` (badges/secondary accent), warm cream `#F5F1EB` (alt section bg). Defined in `src/app/globals.css` `:root`. **Note:** CSS variable names (`--navy`, `--cyan`) were kept from the Voda template to avoid touching 60+ Tailwind class references — the values are EMS, the names are legacy.
+- **Colors:** charcoal `#1F2937` (primary text + dark CTAs), green `#1E8E3E` (primary CTA bg + all interactive), orange `#F57C20` (section bubble label pills, named token `--orange-accent`), warm cream `#F5F1EB` (alt section bg). Defined in `src/app/globals.css` `:root`. **Note:** CSS variable names (`--navy`, `--cyan`) were kept from the Voda template to avoid touching 60+ Tailwind class references — the values are EMS, the names are legacy. `--cyan` = green `#1E8E3E`; `--orange-accent` = orange `#F57C20`.
 - **Fonts:** Outfit (headings, 700–800 weights), Barlow (body, 400–600).
 - **Sections alternate** between white and muted bg for visual rhythm. ~70px vertical padding per section on desktop.
 - **Max content width:** 1200px.
