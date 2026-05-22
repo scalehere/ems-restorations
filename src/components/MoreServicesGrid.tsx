@@ -18,6 +18,7 @@ export function MoreServicesGrid() {
         {services.map((s) => (
           <article
             key={s.title}
+            id={s.cardId}
             className="group bg-white rounded-2xl shadow-md hover:shadow-2xl border border-border overflow-hidden flex flex-col transition"
           >
             <div className="relative block overflow-hidden">

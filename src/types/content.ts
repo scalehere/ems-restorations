@@ -52,6 +52,7 @@ export interface ServiceCard {
   imageSrc: string;
   imageAlt: string;
   sectionHref?: string;
+  cardId?: string;
 }
 
 export interface FooterColumn {
