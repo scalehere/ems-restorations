@@ -42,7 +42,7 @@ export function RoomAdditions() {
         </div>
 
         <Image
-          src="/images/process/process-card-2.jpg"
+          src="/images/process/remodel-adu-construction-exterior.jpg"
           alt="EMS Restorations — ADU and room addition San Diego"
           width={900}
           height={600}

@@ -40,7 +40,7 @@ export function Process() {
 
         <div className="grid gap-6">
           <Image
-            src="/images/process/process-main.jpg"
+            src="/images/process/remodel-kitchen-hero.jpg"
             alt="EMS Restoration Remodeling and Construction"
             width={1100}
             height={700}
@@ -48,14 +48,14 @@ export function Process() {
           />
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="/images/process/process-card-1.jpg"
+              src="/images/process/remodel-kitchen-warm-maple.jpg"
               alt="EMS Restoration Kitchen and Bathroom Remodels"
               width={600}
               height={600}
               className="w-full rounded-xl shadow-lg aspect-square object-cover"
             />
             <Image
-              src="/images/process/process-card-2.jpg"
+              src="/images/process/remodel-adu-construction-exterior.jpg"
               alt="EMS Restoration Home Additions and ADU Builds"
               width={600}
               height={600}

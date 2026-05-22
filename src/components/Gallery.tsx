@@ -2,24 +2,24 @@ import { ImageComparison } from "@/components/ui/image-comparison-slider";
 
 const beforeAfterPairs = [
   {
-    beforeSrc: "/images/before-after/before-mold-kitchen.png",
-    afterSrc: "/images/before-after/after-mold-kitchen.png",
-    altBefore: "Mold damage — heavily affected kitchen walls and ceiling",
-    altAfter: "Restored kitchen — clean, remediated, move-in ready",
-    label: "Mold Damage → Kitchen Restored",
+    beforeSrc: "/images/before-after/before-mold-damage.png",
+    afterSrc: "/images/before-after/after-mold-remediation.png",
+    altBefore: "Mold damage — affected walls and surfaces before remediation",
+    altAfter: "Fully remediated — mold removed, surfaces restored",
+    label: "Mold Damage → Remediated",
   },
   {
-    beforeSrc: "/images/before-after/before-water-damage.png",
-    afterSrc: "/images/before-after/after-kitchen-rebuild.png",
-    altBefore: "Water damage — flooded open room with standing water",
-    altAfter: "Completed kitchen rebuild — white cabinets, large island, hardwood floors",
-    label: "Water Damage → Full Rebuild",
+    beforeSrc: "/images/before-after/before-water-damage-job.png",
+    afterSrc: "/images/before-after/after-water-restoration.png",
+    altBefore: "Water damage — flooded interior before restoration",
+    altAfter: "Fully restored interior after water damage cleanup",
+    label: "Water Damage → Restored",
   },
   {
-    beforeSrc: "/images/before-after/before-fire-home.png",
-    afterSrc: "/images/before-after/after-remodel-home.png",
-    altBefore: "Fire-damaged home — destroyed exterior and interior",
-    altAfter: "Fully restored home — new exterior and remodeled kitchen",
+    beforeSrc: "/images/before-after/before-fire-damaged-interior.png",
+    afterSrc: "/images/before-after/after-fire-restored-interior.png",
+    altBefore: "Fire-damaged interior before restoration",
+    altAfter: "Fully restored after fire and smoke damage",
     label: "Fire Damage → Complete Restoration",
   },
 ];
