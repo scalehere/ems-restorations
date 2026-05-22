@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Gallery } from "@/components/Gallery";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { VideoSection } from "@/components/VideoSection";
 import { MapEmbed } from "@/components/MapEmbed";
 import { MobileTopBar } from "@/components/MobileTopBar";
 import { MoldRemediation } from "@/components/MoldRemediation";
@@ -21,6 +22,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
+        <VideoSection />
         <Overview />
         <WhyEMSTabs />
         <Gallery />
