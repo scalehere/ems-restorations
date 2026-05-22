@@ -24,15 +24,15 @@ export function Overview() {
               href="#hero-form"
               className="inline-flex items-center justify-center px-7 py-3 rounded-md bg-cyan hover:brightness-95 text-white font-heading font-bold uppercase tracking-wide transition"
             >
-              See What Your Remodel Could Look Like — Book a Free Estimate
+              Get a Free Estimate
             </a>
           </div>
         </div>
 
         <div className="relative">
           <Image
-            src="/images/sections/overview.webp"
-            alt="EMS Restorations — San Diego Remodeling"
+            src="/images/sections/overview-remodel.jpg"
+            alt="EMS Restorations — completed kitchen remodel San Diego"
             width={800}
             height={800}
             className="w-full rounded-2xl shadow-2xl"

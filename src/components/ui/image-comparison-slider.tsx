@@ -56,6 +56,7 @@ export function ImageComparison({
           src={beforeSrc}
           alt={altBefore}
           fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover"
           draggable={false}
         />
@@ -69,6 +70,7 @@ export function ImageComparison({
             src={afterSrc}
             alt={altAfter}
             fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover"
             draggable={false}
           />

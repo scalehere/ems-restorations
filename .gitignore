@@ -45,6 +45,9 @@ next-env.d.ts
 .claude/skills/customize/
 .claude/skills/release/
 
+# Local design reference docs — not for the repo
+.claude/docs/
+
 # Personal reference docs — not for the repo (HANDOFF, session-log, screenshots, etc.)
 my_references/
 

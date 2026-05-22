@@ -9,9 +9,9 @@ const beforeAfterPairs = [
     label: "Kitchen Remodel — San Diego, CA",
   },
   {
-    beforeSrc: "/images/before-after/before-water-damage.png",
-    afterSrc: "/images/before-after/after-kitchen-rebuild.png",
-    altBefore: "Bathroom before remodel",
+    beforeSrc: "/images/before-after/before-bathroom-gutted.jpg",
+    afterSrc: "/images/before-after/after-bathroom-remodel.jpg",
+    altBefore: "Bathroom gutted to studs before remodel",
     altAfter: "Bathroom after remodel",
     label: "Bathroom Remodel — San Diego, CA",
   },

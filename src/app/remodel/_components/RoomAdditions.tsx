@@ -3,7 +3,7 @@ import Image from "next/image";
 export function RoomAdditions() {
   return (
     <section id="room-additions" className="bg-muted py-16 lg:py-20 scroll-mt-[var(--nav-offset)]">
-      <div className="mx-auto max-w-[1200px] px-6 grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+      <div className="mx-auto max-w-[1200px] px-6 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <div>
           <h2 className="font-heading font-bold text-3xl lg:text-[40px] leading-[1.15]">
             Room Additions &amp; ADUs
@@ -41,31 +41,13 @@ export function RoomAdditions() {
           </div>
         </div>
 
-        <div className="grid gap-6">
-          <Image
-            src="/images/process/process-main.jpg"
-            alt="EMS Restorations — Room Additions and ADU Builds"
-            width={1100}
-            height={700}
-            className="w-full rounded-2xl shadow-xl"
-          />
-          <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="/images/process/process-card-1.jpg"
-              alt="EMS Restorations — Kitchen and Bathroom Remodels"
-              width={600}
-              height={600}
-              className="w-full rounded-xl shadow-lg aspect-square object-cover"
-            />
-            <Image
-              src="/images/process/process-card-2.jpg"
-              alt="EMS Restorations — Home Additions and ADU Builds"
-              width={600}
-              height={600}
-              className="w-full rounded-xl shadow-lg aspect-square object-cover"
-            />
-          </div>
-        </div>
+        <Image
+          src="/images/process/process-card-2.jpg"
+          alt="EMS Restorations — ADU and room addition San Diego"
+          width={900}
+          height={600}
+          className="w-full rounded-2xl shadow-xl"
+        />
       </div>
     </section>
   );

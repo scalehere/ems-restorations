@@ -1,19 +1,27 @@
 import Image from "next/image";
 import { CheckIcon } from "@/components/icons";
-import { heroBullets, trustBadges } from "@/lib/content";
+import { trustBadges } from "@/lib/content";
+
+const trustBand = [
+  "Licensed & Insured — CA Lic. #1081134",
+  "3D Project Preview Included on Every Job",
+  "Serving All of San Diego County",
+  "No Hidden Fees. Ever.",
+];
 import { GHLFormIframe } from "@/components/GHLFormIframe";
 
 export function Hero() {
   return (
     <section className="relative isolate overflow-hidden bg-navy text-white">
       <Image
-        src="/images/sections/hero-bg.webp"
+        src="/images/sections/hero-bg-joseph.webp"
         alt=""
         fill
         priority
-        className="object-cover -z-10"
+        sizes="100vw"
+        className="object-cover object-[30%_50%] md:object-center -z-10"
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-navy/95 via-navy/70 to-navy/40" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-navy/95 via-navy/80 to-navy/55" />
 
       <div className="mx-auto max-w-[1200px] px-6 py-20 lg:py-28 grid lg:grid-cols-[1.05fr_1fr] gap-12 items-center">
         <div className="text-white">
@@ -26,7 +34,7 @@ export function Hero() {
           </p>
 
           <ul className="mt-8 grid sm:grid-cols-2 gap-3 max-w-xl">
-            {heroBullets.map((b) => (
+            {trustBand.map((b) => (
               <li key={b} className="flex items-start gap-3 text-white">
                 <span className="mt-0.5 grid place-items-center w-6 h-6 rounded-full bg-cyan text-white">
                   <CheckIcon className="w-3.5 h-3.5" />

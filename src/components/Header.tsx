@@ -3,10 +3,11 @@
 import Image from "next/image";
 import { useState } from "react";
 import { ChevronDownIcon, MenuIcon, CloseIcon } from "@/components/icons";
-import { navLinks, PHONE, PHONE_HREF } from "@/lib/content";
+import { navLinks as defaultNavLinks, PHONE, PHONE_HREF } from "@/lib/content";
+import type { NavLink } from "@/types/content";
 import { cn, smoothScrollToHash } from "@/lib/utils";
 
-export function Header() {
+export function Header({ navLinks = defaultNavLinks }: { navLinks?: NavLink[] } = {}) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 

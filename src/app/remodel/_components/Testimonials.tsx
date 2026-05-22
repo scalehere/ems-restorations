@@ -1,5 +1,40 @@
 import { PhoneIcon, StarIcon } from "@/components/icons";
-import { PHONE, PHONE_HREF, testimonials } from "@/lib/content";
+import { PHONE, PHONE_HREF } from "@/lib/content";
+
+const testimonials = [
+  {
+    name: "Maria L.",
+    location: "Chula Vista, CA",
+    project: "Kitchen Remodel",
+    rating: 5,
+    daysAgo: "2 weeks ago",
+    text: "They showed me a 3D design before anything started — I knew exactly what I was getting. The kitchen came out better than I imagined and they finished on schedule.",
+  },
+  {
+    name: "David R.",
+    location: "La Mesa, CA",
+    project: "Bathroom Remodel",
+    rating: 5,
+    daysAgo: "1 month ago",
+    text: "Joseph and his crew were professional from start to finish. No surprises on the price, no delays. The bathroom looks incredible and everything was done to code.",
+  },
+  {
+    name: "Sandra T.",
+    location: "El Cajon, CA",
+    project: "ADU Build",
+    rating: 5,
+    daysAgo: "2 months ago",
+    text: "EMS handled all the permits and inspections — I didn't have to deal with the city once. The ADU was completed on time and is already rented out.",
+  },
+  {
+    name: "James K.",
+    location: "Santee, CA",
+    project: "Kitchen Remodel",
+    rating: 5,
+    daysAgo: "3 months ago",
+    text: "I've had bad experiences with contractors before. EMS was completely different — honest pricing, one point of contact, and the work was done right the first time.",
+  },
+];
 
 export function Testimonials() {
   return (
@@ -20,7 +55,7 @@ export function Testimonials() {
             >
               <header className="flex items-center gap-3">
                 <span className="w-10 h-10 rounded-full bg-cyan text-white font-heading font-bold grid place-items-center">
-                  {t.initial ?? t.name[0]}
+                  {t.name[0]}
                 </span>
                 <div className="leading-tight">
                   <div className="font-heading font-semibold text-navy">{t.name}</div>
@@ -33,6 +68,7 @@ export function Testimonials() {
                 ))}
               </div>
               <p className="mt-3 text-sm leading-relaxed text-navy/90 line-clamp-5">{t.text}</p>
+              <p className="mt-3 text-xs text-navy/50">{t.project} — {t.location}</p>
             </article>
           ))}
         </div>

@@ -41,7 +41,7 @@ export function Bathroom() {
           </div>
         </div>
         <Image
-          src="/images/sections/commercial-mold.webp"
+          src="/images/services/svc-bathroom.jpg"
           alt="EMS Restorations — Bathroom Remodeling San Diego"
           width={800}
           height={800}
