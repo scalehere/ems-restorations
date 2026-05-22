@@ -2,25 +2,25 @@ import { ImageComparison } from "@/components/ui/image-comparison-slider";
 
 const beforeAfterPairs = [
   {
-    beforeSrc: "/images/before-after/before-mold-kitchen.png",
-    afterSrc: "/images/before-after/after-mold-kitchen.png",
-    altBefore: "Kitchen before remodel",
-    altAfter: "Kitchen after remodel",
+    beforeSrc: "/images/before-after/before-kitchen-oak-cabinets.png",
+    afterSrc: "/images/before-after/after-kitchen-navy-island.png",
+    altBefore: "Kitchen before remodel — dated oak cabinets",
+    altAfter: "Kitchen after remodel — white shaker cabinets and navy island",
     label: "Kitchen Remodel — San Diego, CA",
   },
   {
-    beforeSrc: "/images/before-after/before-bathroom-gutted.jpg",
-    afterSrc: "/images/before-after/after-bathroom-remodel.jpg",
-    altBefore: "Bathroom gutted to studs before remodel",
-    altAfter: "Bathroom after remodel",
+    beforeSrc: "/images/before-after/before-bathroom-dated-vanity.png",
+    afterSrc: "/images/before-after/after-bathroom-navy-vanity.png",
+    altBefore: "Bathroom before remodel — dated vanity and stripped walls",
+    altAfter: "Bathroom after remodel — navy vanity with marble countertop",
     label: "Bathroom Remodel — San Diego, CA",
   },
   {
-    beforeSrc: "/images/before-after/before-fire-home.png",
-    afterSrc: "/images/before-after/after-remodel-home.png",
-    altBefore: "Room addition before",
-    altAfter: "Room addition after",
-    label: "Room Addition — San Diego, CA",
+    beforeSrc: "/images/before-after/before-adu-stucco-exterior.png",
+    afterSrc: "/images/before-after/after-adu-landscaped-exterior.png",
+    altBefore: "Property before ADU addition — plain stucco exterior",
+    altAfter: "Property after ADU addition — landscaped exterior with new structure",
+    label: "Room Addition & ADU — San Diego, CA",
   },
 ];
 

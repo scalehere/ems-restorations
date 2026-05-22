@@ -80,7 +80,7 @@ export function ImageComparison({
         <span className="absolute top-3 left-3 bg-black/60 text-white text-xs font-heading font-semibold uppercase tracking-wide px-2 py-1 rounded">
           Before
         </span>
-        <span className="absolute top-3 right-3 bg-[var(--orange)] text-white text-xs font-heading font-semibold uppercase tracking-wide px-2 py-1 rounded">
+        <span className="absolute top-3 right-3 bg-[var(--orange-accent)] text-white text-xs font-heading font-semibold uppercase tracking-wide px-2 py-1 rounded">
           After
         </span>
 
