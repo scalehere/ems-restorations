@@ -20,7 +20,7 @@ export function MoreServicesGrid() {
             key={s.title}
             className="group bg-white rounded-2xl shadow-md hover:shadow-2xl border border-border overflow-hidden flex flex-col transition"
           >
-            <a href={s.residentialHref} className="block overflow-hidden">
+            <div className="block overflow-hidden">
               <Image
                 src={s.imageSrc}
                 alt={s.imageAlt}
@@ -28,28 +28,10 @@ export function MoreServicesGrid() {
                 height={300}
                 className="w-full aspect-[2/1] object-cover group-hover:scale-105 transition duration-500"
               />
-            </a>
+            </div>
             <div className="p-6 flex flex-col flex-1">
-              <h3 className="font-heading font-bold text-navy text-xl">
-                <a href={s.residentialHref} className="hover:text-cyan transition">
-                  {s.title}
-                </a>
-              </h3>
-              <p className="mt-3 text-[15px] leading-relaxed text-navy/85 flex-1">{s.description}</p>
-              <div className="mt-5 flex gap-2">
-                <a
-                  href={s.residentialHref}
-                  className="flex-1 text-center px-4 py-2 rounded-md bg-cyan text-navy text-sm font-heading font-bold uppercase tracking-wide hover:brightness-95 transition"
-                >
-                  Residential
-                </a>
-                <a
-                  href={s.commercialHref}
-                  className="flex-1 text-center px-4 py-2 rounded-md bg-navy text-white text-sm font-heading font-bold uppercase tracking-wide hover:bg-navy-light transition"
-                >
-                  Commercial
-                </a>
-              </div>
+              <h3 className="font-heading font-bold text-navy text-xl">{s.title}</h3>
+              <p className="mt-3 text-[15px] leading-relaxed text-navy/85">{s.description}</p>
             </div>
           </article>
         ))}

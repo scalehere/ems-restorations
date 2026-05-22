@@ -1,4 +1,5 @@
-import { ArrowRightIcon } from "@/components/icons";
+import { PhoneIcon } from "@/components/icons";
+import { PHONE, PHONE_HREF } from "@/lib/content";
 
 export function FinalCta() {
   return (
@@ -22,10 +23,10 @@ export function FinalCta() {
             Get My Free Estimate + $250 Gift Card
           </a>
           <a
-            href="#"
+            href={PHONE_HREF}
             className="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-md bg-navy hover:bg-navy-light text-white font-heading font-bold uppercase tracking-wide transition"
           >
-            Our Service Areas <ArrowRightIcon className="w-4 h-4" />
+            <PhoneIcon className="w-4 h-4" /> {PHONE}
           </a>
         </div>
       </div>
