@@ -4,8 +4,13 @@ import { useEffect } from 'react';
 import Script from 'next/script';
 
 const GHL_ORIGIN = 'https://api.leadconnectorhq.com';
+const GHL_FORM_BASE = 'https://api.leadconnectorhq.com/widget/form/EEJ792UCw3hfLSrTfLyQ';
 
-export function GHLFormIframe() {
+interface GHLFormIframeProps {
+  initialInquiry?: 'restoration' | 'rebuilding';
+}
+
+export function GHLFormIframe({ initialInquiry }: GHLFormIframeProps = {}) {
   useEffect(() => {
     function handleMessage(event: MessageEvent) {
       if (event.origin !== GHL_ORIGIN) return;
@@ -23,10 +28,14 @@ export function GHLFormIframe() {
     return () => window.removeEventListener('message', handleMessage);
   }, []);
 
+  const src = initialInquiry
+    ? `${GHL_FORM_BASE}?initial_inquiry=${encodeURIComponent(initialInquiry)}`
+    : GHL_FORM_BASE;
+
   return (
     <>
       <iframe
-        src="https://api.leadconnectorhq.com/widget/form/EEJ792UCw3hfLSrTfLyQ"
+        src={src}
         style={{
           width: '100%',
           height: '500px',
