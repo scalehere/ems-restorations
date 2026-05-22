@@ -14,6 +14,7 @@ import { Overview } from "@/app/remodel/_components/Overview";
 import { RestorationTieIn } from "@/app/remodel/_components/RestorationTieIn";
 import { RoomAdditions } from "@/app/remodel/_components/RoomAdditions";
 import { Testimonials } from "@/app/remodel/_components/Testimonials";
+import { VideoSection } from "@/app/remodel/_components/VideoSection";
 import type { NavLink } from "@/types/content";
 
 export const metadata: Metadata = {
@@ -52,6 +53,7 @@ export default function Remodel() {
       <Header navLinks={remodelNavLinks} />
       <main className="flex-1">
         <Hero />
+        <VideoSection />
         <Overview />
         <WhyEMSTabs />
         <Gallery />
