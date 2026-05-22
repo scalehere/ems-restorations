@@ -1,5 +1,5 @@
-import { StarIcon } from "@/components/icons";
-import { testimonials } from "@/lib/content";
+import { PhoneIcon, StarIcon } from "@/components/icons";
+import { PHONE, PHONE_HREF, testimonials } from "@/lib/content";
 
 export function Testimonials() {
   return (
@@ -33,19 +33,16 @@ export function Testimonials() {
                 ))}
               </div>
               <p className="mt-3 text-sm leading-relaxed text-navy/90 line-clamp-5">{t.text}</p>
-              <a href="#" className="mt-3 text-sm font-semibold text-cyan hover:underline self-start">
-                Read more
-              </a>
             </article>
           ))}
         </div>
 
         <div className="mt-10 text-center">
           <a
-            href="#"
-            className="inline-block px-7 py-3 rounded-md bg-navy text-white font-heading font-bold uppercase tracking-wide hover:bg-navy-light transition"
+            href={PHONE_HREF}
+            className="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-md bg-navy hover:bg-navy-light text-white font-heading font-bold uppercase tracking-wide transition"
           >
-            View More Reviews
+            <PhoneIcon className="w-4 h-4" /> Call {PHONE}
           </a>
         </div>
       </div>

@@ -43,6 +43,15 @@ export function Gallery() {
             <ImageComparison key={pair.label} {...pair} />
           ))}
         </div>
+
+        <div className="mt-10 text-center">
+          <a
+            href="#hero-form"
+            className="inline-flex items-center justify-center px-7 py-3 rounded-md bg-cyan hover:brightness-95 text-white font-heading font-bold uppercase tracking-wide transition"
+          >
+            Get a Free Assessment
+          </a>
+        </div>
       </div>
     </section>
   );
