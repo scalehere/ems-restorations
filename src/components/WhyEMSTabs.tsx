@@ -11,7 +11,7 @@ export function WhyEMSTabs() {
   const current = tabContents.find((t) => t.id === active) ?? tabContents[0];
 
   return (
-    <section className="bg-white pt-16 lg:pt-20">
+    <section id="why-ems" className="bg-white pt-16 lg:pt-20 scroll-mt-[var(--nav-offset)]">
       <div className="mx-auto max-w-[1200px] px-6 text-center">
         <span className="section-bubble">About Us</span>
         <h2 className="mt-5 font-heading font-bold text-3xl lg:text-[40px] leading-[1.15] max-w-3xl mx-auto">

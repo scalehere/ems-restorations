@@ -56,6 +56,9 @@
 }
 
 :root {
+  /* Nav clearance for anchor targets — bump here if header height changes.
+     Used via scroll-mt-[var(--nav-offset)] on every section[id]. */
+  --nav-offset: 5rem; /* mobile: header bar ~72px */
   /* EMS Restoration brand colors.
      NOTE: variable names (--navy, --cyan) kept from the original Voda design to avoid
      touching 60+ Tailwind class references across components. Values are EMS now.
@@ -132,6 +135,16 @@
   }
 }
 
+/* Anchor offset — scroll-margin-top written as plain CSS because Tailwind v4
+   silently drops scroll-mt-[var(...)] in some Turbopack contexts (LESSONS #64/100).
+   The scroll-mt-[var(--nav-offset)] classes on each element stay as a fallback. */
+section[id] {
+  scroll-margin-top: var(--nav-offset);
+}
+#hero-form {
+  scroll-margin-top: var(--nav-offset);
+}
+
 /* Section bubble pill label (e.g., "TESTIMONIALS", "FAQ", "OUR SERVICES") */
 .section-bubble {
   display: inline-block;
@@ -154,8 +167,15 @@
   background-size: 300px auto;
 }
 
+@media (min-width: 1024px) {
+  :root {
+    --nav-offset: 9rem; /* desktop: utility row + nav row ~140px */
+  }
+}
+
 @media (max-width: 959px) {
   h1 { font-size: 30px; }
   h2 { font-size: 28px; }
   h3 { font-size: 22px; }
 }
+

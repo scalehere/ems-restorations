@@ -53,7 +53,7 @@ export function Hero() {
         {/* GoHighLevel (LeadConnector) embedded form */}
         <div
           id="hero-form"
-          className="bg-white rounded-xl shadow-2xl overflow-hidden w-full max-w-md mx-auto lg:ml-auto"
+          className="bg-white rounded-xl shadow-2xl overflow-hidden w-full max-w-md mx-auto lg:ml-auto scroll-mt-[var(--nav-offset)]"
         >
           <GHLFormIframe />
         </div>

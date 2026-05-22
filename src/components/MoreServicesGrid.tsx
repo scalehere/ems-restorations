@@ -3,7 +3,7 @@ import { services } from "@/lib/content";
 
 export function MoreServicesGrid() {
   return (
-    <section className="bg-white py-16 lg:py-20">
+    <section id="services" className="bg-white py-16 lg:py-20 scroll-mt-[var(--nav-offset)]">
       <div className="mx-auto max-w-[1200px] px-6 text-center">
         <span className="section-bubble">Our Services</span>
         <h2 className="mt-5 font-heading font-bold text-3xl lg:text-[40px] leading-[1.15] max-w-3xl mx-auto">
