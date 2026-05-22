@@ -14,7 +14,7 @@ Repo: https://github.com/scalehere/ems-restorations (private)
 - **Tailwind CSS v4** — tokens live in `src/app/globals.css` via `@theme inline {}` and `:root`. No `tailwind.config.js`.
 - **shadcn/ui** + `@base-ui/react` primitives. `<Button>` does NOT support `asChild` here.
 - **`next/font/google`** — Outfit (headings) + Barlow (body), wired in `src/app/layout.tsx`.
-- **GoHighLevel (LeadConnector)** — Hero quote form is a live embedded iframe, form ID `EEJ792UCw3hfLSrTfLyQ`. The `form_embed.js` script that auto-resizes the iframe is loaded via `next/script` with `strategy="lazyOnload"`.
+- **GoHighLevel (LeadConnector)** — Hero quote form is a live embedded iframe, form ID `EEJ792UCw3hfLSrTfLyQ`. The `form_embed.js` script that auto-resizes the iframe is loaded via `next/script` with `strategy="afterInteractive"`.
 
 ## Build Commands
 ```bash
