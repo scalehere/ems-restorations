@@ -6,7 +6,7 @@ export function MobileTopBar() {
     <div className="lg:hidden fixed bottom-0 left-0 right-0 z-[60] grid grid-cols-3 bg-navy text-white text-[11px] font-semibold tracking-wide uppercase">
       <a
         href={PHONE_HREF}
-        className="flex flex-col items-center justify-center gap-1 py-2 px-1 bg-cyan text-navy hover:brightness-95 transition"
+        className="flex flex-col items-center justify-center gap-1 py-2 px-1 bg-cyan text-white hover:brightness-95 transition"
       >
         <PhoneIcon className="w-4 h-4" />
         <span className="leading-tight text-center">Call Now</span>

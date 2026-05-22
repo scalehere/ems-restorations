@@ -19,7 +19,7 @@ export function Testimonials() {
               className="bg-white rounded-xl border border-border shadow-md p-6 flex flex-col hover:-translate-y-1 transition"
             >
               <header className="flex items-center gap-3">
-                <span className="w-10 h-10 rounded-full bg-cyan text-navy font-heading font-bold grid place-items-center">
+                <span className="w-10 h-10 rounded-full bg-cyan text-white font-heading font-bold grid place-items-center">
                   {t.initial ?? t.name[0]}
                 </span>
                 <div className="leading-tight">

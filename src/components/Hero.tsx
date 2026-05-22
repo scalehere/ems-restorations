@@ -28,7 +28,7 @@ export function Hero() {
           <ul className="mt-8 grid sm:grid-cols-2 gap-3 max-w-xl">
             {heroBullets.map((b) => (
               <li key={b} className="flex items-start gap-3 text-white">
-                <span className="mt-0.5 grid place-items-center w-6 h-6 rounded-full bg-cyan text-navy">
+                <span className="mt-0.5 grid place-items-center w-6 h-6 rounded-full bg-cyan text-white">
                   <CheckIcon className="w-3.5 h-3.5" />
                 </span>
                 <span className="text-base font-medium">{b}</span>
