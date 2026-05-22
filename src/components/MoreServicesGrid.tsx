@@ -20,14 +20,31 @@ export function MoreServicesGrid() {
             key={s.title}
             className="group bg-white rounded-2xl shadow-md hover:shadow-2xl border border-border overflow-hidden flex flex-col transition"
           >
-            <div className="block overflow-hidden">
-              <Image
-                src={s.imageSrc}
-                alt={s.imageAlt}
-                width={600}
-                height={300}
-                className="w-full aspect-[2/1] object-cover group-hover:scale-105 transition duration-500"
-              />
+            <div className="relative block overflow-hidden">
+              {s.sectionHref ? (
+                <a href={s.sectionHref} aria-label={`Learn more about ${s.title}`}>
+                  <Image
+                    src={s.imageSrc}
+                    alt={s.imageAlt}
+                    width={600}
+                    height={300}
+                    className="w-full aspect-[2/1] object-cover group-hover:scale-105 transition duration-500 cursor-pointer"
+                  />
+                </a>
+              ) : (
+                <>
+                  <Image
+                    src={s.imageSrc}
+                    alt={s.imageAlt}
+                    width={600}
+                    height={300}
+                    className="w-full aspect-[2/1] object-cover transition duration-500"
+                  />
+                  <span className="absolute top-3 left-3 bg-white/90 text-navy text-xs font-heading font-semibold uppercase tracking-wide px-2.5 py-1 rounded-full shadow-sm">
+                    Also Available
+                  </span>
+                </>
+              )}
             </div>
             <div className="p-6 flex flex-col flex-1">
               <h3 className="font-heading font-bold text-navy text-xl">{s.title}</h3>

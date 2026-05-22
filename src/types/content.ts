@@ -51,8 +51,7 @@ export interface ServiceCard {
   description: string;
   imageSrc: string;
   imageAlt: string;
-  residentialHref: string;
-  commercialHref: string;
+  sectionHref?: string;
 }
 
 export interface FooterColumn {
