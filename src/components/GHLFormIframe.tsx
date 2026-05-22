@@ -29,7 +29,7 @@ export function GHLFormIframe() {
         src="https://api.leadconnectorhq.com/widget/form/EEJ792UCw3hfLSrTfLyQ"
         style={{
           width: '100%',
-          minHeight: 'auto',
+          height: '500px',
           border: 'none',
           borderRadius: '8px',
           display: 'block',
@@ -50,7 +50,7 @@ export function GHLFormIframe() {
       />
       <Script
         src="https://link.msgsndr.com/js/form_embed.js"
-        strategy="lazyOnload"
+        strategy="afterInteractive"
       />
     </>
   );
