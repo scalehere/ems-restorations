@@ -1,21 +1,26 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import { ChevronDownIcon, MenuIcon, CloseIcon } from "@/components/icons";
 import { navLinks, PHONE, PHONE_HREF } from "@/lib/content";
-import { cn } from "@/lib/utils";
+import { cn, smoothScrollToHash } from "@/lib/utils";
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
+function closeMobile() {
+    setMobileOpen(false);
+    setOpenDropdown(null);
+  }
 
   return (
     <header className="sticky top-[var(--mobile-bar-h,0px)] z-50 bg-white shadow-sm">
       {/* Top utility row */}
       <div className="hidden lg:block border-b border-border/60">
         <div className="mx-auto max-w-[1200px] px-6 py-4 flex items-center gap-6">
-          <Link href="#" className="shrink-0">
+          <a href="#" onClick={(e) => smoothScrollToHash(e, "#")} className="shrink-0">
             <Image
               src="/images/logos/ems-restoration-logo.png"
               alt="EMS Restoration"
@@ -24,7 +29,7 @@ export function Header() {
               className="h-[70px] w-[70px]"
               priority
             />
-          </Link>
+          </a>
 
           <div className="flex-1 flex items-center gap-6 justify-end">
             <a
@@ -44,6 +49,7 @@ export function Header() {
 
             <a
               href="#hero-form"
+              onClick={(e) => smoothScrollToHash(e, "#hero-form")}
               className="inline-flex items-center justify-center h-11 px-4 rounded-md bg-cyan hover:brightness-95 text-navy font-heading font-semibold uppercase tracking-wide text-xs transition whitespace-nowrap"
             >
               Schedule an Appointment
@@ -57,24 +63,26 @@ export function Header() {
         <div className="mx-auto max-w-[1200px] px-6 py-3 flex items-center justify-center gap-8">
           {navLinks.map((item) => (
             <div key={item.label} className="relative group">
-              <Link
+              <a
                 href={item.href}
+                onClick={(e) => smoothScrollToHash(e, item.href)}
                 className="flex items-center gap-1 text-[14px] font-heading font-medium uppercase tracking-wider text-navy hover:text-cyan transition"
               >
                 {item.label}
                 {item.children?.length ? <ChevronDownIcon className="w-3 h-3" /> : null}
-              </Link>
+              </a>
               {item.children?.length ? (
                 <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
                   <ul className="min-w-[260px] bg-white shadow-lg border border-border rounded-md py-2">
                     {item.children.map((c) => (
                       <li key={c.label}>
-                        <Link
+                        <a
                           href={c.href}
+                          onClick={(e) => smoothScrollToHash(e, c.href)}
                           className="block px-4 py-2 text-sm text-navy hover:bg-cyan/10 hover:text-cyan transition"
                         >
                           {c.label}
-                        </Link>
+                        </a>
                       </li>
                     ))}
                   </ul>
@@ -87,7 +95,7 @@ export function Header() {
 
       {/* Mobile bar */}
       <div className="lg:hidden flex items-center justify-between px-4 py-3 border-b border-border">
-        <Link href="#" className="shrink-0">
+        <a href="#" onClick={(e) => smoothScrollToHash(e, "#")} className="shrink-0">
           <Image
             src="/images/logos/ems-restoration-logo.png"
             alt="EMS Restoration"
@@ -95,7 +103,7 @@ export function Header() {
             height={500}
             className="h-12 w-12"
           />
-        </Link>
+        </a>
         <button
           onClick={() => setMobileOpen((v) => !v)}
           className="grid place-items-center w-11 h-11 rounded-md text-navy hover:bg-muted"
@@ -117,40 +125,40 @@ export function Header() {
           <ul className="flex flex-col">
             {navLinks.map((item) => (
               <li key={item.label} className="border-b border-border/60 last:border-b-0">
-                <details className="group">
-                  <summary
-                    className={cn(
-                      "flex items-center justify-between py-3 text-base font-heading font-semibold uppercase tracking-wide text-navy",
-                      !item.children && "list-none",
-                    )}
-                  >
-                    {item.children ? (
+                {item.children ? (
+                  <>
+                    <button
+                      onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
+                      className="flex items-center justify-between w-full py-3 text-base font-heading font-semibold uppercase tracking-wide text-navy"
+                    >
                       <span>{item.label}</span>
-                    ) : (
-                      <Link href={item.href} onClick={() => setMobileOpen(false)} className="flex-1">
-                        {item.label}
-                      </Link>
+                      <ChevronDownIcon className={cn("w-4 h-4 transition-transform", openDropdown === item.label && "rotate-180")} />
+                    </button>
+                    {openDropdown === item.label && (
+                      <ul className="pl-3 pb-2">
+                        {item.children.map((c) => (
+                          <li key={c.label}>
+                            <a
+                              href={c.href}
+                              onClick={(e) => { closeMobile(); smoothScrollToHash(e, c.href, 320); }}
+                              className="block py-2 text-sm text-muted-foreground hover:text-cyan"
+                            >
+                              {c.label}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
                     )}
-                    {item.children ? (
-                      <ChevronDownIcon className="group-open:rotate-180 transition" />
-                    ) : null}
-                  </summary>
-                  {item.children ? (
-                    <ul className="pl-3 pb-2">
-                      {item.children.map((c) => (
-                        <li key={c.label}>
-                          <Link
-                            href={c.href}
-                            onClick={() => setMobileOpen(false)}
-                            className="block py-2 text-sm text-muted-foreground hover:text-cyan"
-                          >
-                            {c.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  ) : null}
-                </details>
+                  </>
+                ) : (
+                  <a
+                    href={item.href}
+                    onClick={(e) => { closeMobile(); smoothScrollToHash(e, item.href, 320); }}
+                    className="block py-3 text-base font-heading font-semibold uppercase tracking-wide text-navy hover:text-cyan transition"
+                  >
+                    {item.label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
@@ -163,6 +171,7 @@ export function Header() {
             </a>
             <a
               href="#hero-form"
+              onClick={(e) => { closeMobile(); smoothScrollToHash(e, "#hero-form", 320); }}
               className="block w-full text-center py-3 rounded-md bg-navy text-white font-heading font-bold uppercase tracking-wide"
             >
               Schedule an Appointment

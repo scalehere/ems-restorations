@@ -26,7 +26,7 @@ const beforeAfterPairs = [
 
 export function Gallery() {
   return (
-    <section className="bg-muted py-16 lg:py-20">
+    <section id="gallery" className="bg-muted py-16 lg:py-20 scroll-mt-[var(--nav-offset)]">
       <div className="mx-auto max-w-[1200px] px-6">
         <div className="text-center">
           <span className="section-bubble">Gallery</span>

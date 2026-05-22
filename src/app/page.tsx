@@ -1,4 +1,3 @@
-import { Breadcrumb } from "@/components/Breadcrumb";
 import { FaqSection } from "@/components/FaqSection";
 import { FinalCta } from "@/components/FinalCta";
 import { FireSmoke } from "@/components/FireSmoke";
@@ -22,7 +21,6 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <Breadcrumb />
         <Overview />
         <WhyEMSTabs />
         <Gallery />

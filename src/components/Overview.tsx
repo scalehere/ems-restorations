@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Overview() {
   return (
-    <section className="bg-white py-16 lg:py-20">
+    <section id="water-damage" className="bg-white py-16 lg:py-20 scroll-mt-[var(--nav-offset)]">
       <div className="mx-auto max-w-[1200px] px-6 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <div>
           <h2 className="font-heading font-bold text-3xl lg:text-[40px] leading-[1.15]">
