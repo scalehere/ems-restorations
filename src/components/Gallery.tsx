@@ -2,25 +2,25 @@ import { ImageComparison } from "@/components/ui/image-comparison-slider";
 
 const beforeAfterPairs = [
   {
-    beforeSrc: "/images/before-after/before-water.jpg",
-    afterSrc: "/images/process/process-main.jpg",
-    altBefore: "Water-damaged room — gutted walls, exposed studs, vapor barrier",
-    altAfter: "Completed kitchen remodel — warm wood island, recessed lighting",
-    label: "Water Damage → Full Kitchen Rebuild",
+    beforeSrc: "/images/before-after/before-mold-kitchen.png",
+    afterSrc: "/images/before-after/after-mold-kitchen.png",
+    altBefore: "Mold damage — heavily affected kitchen walls and ceiling",
+    altAfter: "Restored kitchen — clean, remediated, move-in ready",
+    label: "Mold Damage → Kitchen Restored",
   },
   {
-    beforeSrc: "/images/gallery/gallery-2.jpg",
-    afterSrc: "/images/gallery/gallery-3.jpg",
-    altBefore: "Active water dryout — dehumidifiers and air movers deployed",
-    altAfter: "Completed bathroom remodel — custom tile shower, soaking tub",
-    label: "Active Dryout → Bathroom Remodel",
+    beforeSrc: "/images/before-after/before-water-damage.png",
+    afterSrc: "/images/before-after/after-kitchen-rebuild.png",
+    altBefore: "Water damage — flooded open room with standing water",
+    altAfter: "Completed kitchen rebuild — white cabinets, large island, hardwood floors",
+    label: "Water Damage → Full Rebuild",
   },
   {
-    beforeSrc: "/images/sections/mold-remediation.jpg",
-    afterSrc: "/images/gallery/gallery-1.jpg",
-    altBefore: "Black mold inside opened wall cavity",
-    altAfter: "Completed kitchen remodel — white cabinets, navy island",
-    label: "Mold Remediation → Kitchen Remodel",
+    beforeSrc: "/images/before-after/before-fire-home.png",
+    afterSrc: "/images/before-after/after-remodel-home.png",
+    altBefore: "Fire-damaged home — destroyed exterior and interior",
+    altAfter: "Fully restored home — new exterior and remodeled kitchen",
+    label: "Fire Damage → Complete Restoration",
   },
 ];
 
