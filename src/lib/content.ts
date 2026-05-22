@@ -13,7 +13,6 @@ export const PHONE_HREF = "tel:8587375254";
 export const LOCATION_NAME = "San Diego, CA";
 
 export const navLinks: NavLink[] = [
-  { label: "Home", href: "#" },
   {
     label: "Services",
     href: "#services",
@@ -22,7 +21,7 @@ export const navLinks: NavLink[] = [
       { label: "Mold Remediation", href: "#mold-remediation" },
       { label: "Fire & Smoke Damage Restoration", href: "#fire-smoke" },
       { label: "Home Remodeling & Construction", href: "#remodeling" },
-      { label: "Biohazard Cleanup", href: "#services" },
+      { label: "Biohazard Cleanup", href: "#biohazard" },
     ],
   },
   {
@@ -227,6 +226,7 @@ export const services: ServiceCard[] = [
     description: "Safe, discreet, and thorough biohazard and trauma scene cleanup handled by trained specialists following all regulatory standards.",
     imageSrc: "/images/services/svc-odor.webp",
     imageAlt: "EMS Restoration Biohazard Cleanup",
+    cardId: "biohazard",
   },
 ];
 
