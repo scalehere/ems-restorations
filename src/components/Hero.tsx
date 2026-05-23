@@ -18,11 +18,11 @@ export function Hero() {
       <div className="mx-auto max-w-[1200px] px-6 py-20 lg:py-28 grid lg:grid-cols-[1.05fr_1fr] gap-12 items-center">
         <div className="text-white">
           <h1 className="font-heading font-extrabold text-3xl md:text-4xl lg:text-[44px] leading-[1.15] text-white">
-            San Diego&rsquo;s Restoration Team That Handles Your Insurance Claim Start to Finish
+            San Diego&rsquo;s Restoration Team — We Work Directly With Your Insurance Company, Start to Finish
           </h1>
 
           <p className="mt-6 text-lg leading-relaxed text-white/90 max-w-xl">
-            Water damage, mold, fire &amp; smoke restoration for San Diego County homeowners. Over 1,000 insurance claims handled. Licensed, veteran-owned, available 24/7.
+            Water damage, mold, fire &amp; smoke restoration for San Diego County homeowners. Over 1,000 restoration projects completed. We coordinate directly with your insurance provider. Licensed, veteran-owned, available 24/7.
           </p>
 
           <ul className="mt-8 grid sm:grid-cols-2 gap-3 max-w-xl">
