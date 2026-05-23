@@ -7,7 +7,7 @@ const GHL_ORIGIN = 'https://api.leadconnectorhq.com';
 const GHL_FORM_BASE = 'https://api.leadconnectorhq.com/widget/form/EEJ792UCw3hfLSrTfLyQ';
 
 interface GHLFormIframeProps {
-  funnelInterest?: 'restoration' | 'rebuilding';
+  funnelInterest?: 'restoration' | 'remodel';
 }
 
 export function GHLFormIframe({ funnelInterest }: GHLFormIframeProps = {}) {
