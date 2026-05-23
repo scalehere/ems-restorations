@@ -11,6 +11,7 @@ export function Hero() {
         alt=""
         fill
         priority
+        sizes="100vw"
         className="object-cover object-[30%_50%] md:object-center -z-10"
       />
       <div className="absolute inset-0 -z-10 bg-gradient-to-r from-navy/95 via-navy/80 to-navy/55" />

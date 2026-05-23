@@ -14,7 +14,7 @@ export function MoreServicesGrid() {
         </p>
       </div>
 
-      <div className="mt-12 mx-auto max-w-[1200px] px-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-12 mx-auto max-w-[1200px] px-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {services.map((s) => (
           <article
             key={s.title}

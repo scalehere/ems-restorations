@@ -17,8 +17,8 @@ export function RestorationTieIn() {
         </p>
       </div>
 
-      <div className="mt-12 mx-auto max-w-[1200px] px-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {services.map((s) => (
+      <div className="mt-12 mx-auto max-w-[1200px] px-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {services.filter((s) => !s.remodelSectionHref).map((s) => (
           <article
             key={s.title}
             className="group bg-white rounded-2xl shadow-md hover:shadow-2xl border border-border overflow-hidden flex flex-col transition"
@@ -38,6 +38,38 @@ export function RestorationTieIn() {
             </div>
           </article>
         ))}
+      </div>
+
+      <div className="mt-16 mx-auto max-w-[1200px] px-6">
+        <div className="flex items-center gap-4 mb-8">
+          <div className="flex-1 h-px bg-border" />
+          <span className="font-heading font-semibold text-sm uppercase tracking-widest text-navy/50">Our Remodeling Services</span>
+          <div className="flex-1 h-px bg-border" />
+        </div>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {services.filter((s) => !!s.remodelSectionHref).map((s) => (
+            <article
+              key={s.title}
+              className="group bg-white rounded-2xl shadow-md hover:shadow-2xl border border-border overflow-hidden flex flex-col transition"
+            >
+              <div className="block overflow-hidden">
+                <a href={s.remodelSectionHref} aria-label={`Back to ${s.title}`}>
+                  <Image
+                    src={s.imageSrc}
+                    alt={s.imageAlt}
+                    width={600}
+                    height={300}
+                    className="w-full aspect-[2/1] object-cover group-hover:scale-105 transition duration-500 cursor-pointer"
+                  />
+                </a>
+              </div>
+              <div className="p-6 flex flex-col flex-1">
+                <h3 className="font-heading font-bold text-navy text-xl">{s.title}</h3>
+                <p className="mt-3 text-[15px] leading-relaxed text-navy/85">{s.description}</p>
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );

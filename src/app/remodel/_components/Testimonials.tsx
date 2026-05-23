@@ -1,7 +1,8 @@
 import { PhoneIcon, StarIcon } from "@/components/icons";
 import { PHONE, PHONE_HREF } from "@/lib/content";
+import type { Testimonial } from "@/types/content";
 
-const testimonials = [
+const testimonials: Testimonial[] = [
   {
     name: "Maria L.",
     location: "Chula Vista, CA",
@@ -55,7 +56,7 @@ export function Testimonials() {
             >
               <header className="flex items-center gap-3">
                 <span className="w-10 h-10 rounded-full bg-cyan text-white font-heading font-bold grid place-items-center">
-                  {t.name[0]}
+                  {t.initial ?? t.name[0]}
                 </span>
                 <div className="leading-tight">
                   <div className="font-heading font-semibold text-navy">{t.name}</div>

@@ -26,8 +26,8 @@ const tabs = [
     label: "3D Design Preview",
     heading: "See It Before We Build It",
     body: "We create a 3D model of your finished project before construction begins. You approve every detail — layout, finishes, fixtures — before a single wall comes down.",
-    imageSrc: "/images/tabs/remodel-3d-design-mood-board.jpg",
-    imageAlt: "EMS Restorations — design selections mood board",
+    imageSrc: "/images/tabs/remodel-3d-kitchen-render.png",
+    imageAlt: "EMS Restorations — 3D kitchen design render",
   },
   {
     id: "one-team",

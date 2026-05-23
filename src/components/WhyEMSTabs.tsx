@@ -24,7 +24,7 @@ export function WhyEMSTabs() {
 
       {/* Tabs */}
       <div className="mt-10 mx-auto max-w-[1200px] px-6">
-        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-6">
+        <div className="grid grid-cols-2 lg:flex lg:flex-wrap lg:justify-center gap-2 sm:gap-3 mb-6">
           {tabContents.map((t) => (
             <button
               key={t.id}
@@ -56,7 +56,7 @@ export function WhyEMSTabs() {
           />
           <div className="grid lg:grid-cols-[1.1fr_1fr] gap-8 lg:gap-12 p-8 sm:p-10 lg:p-14 items-center text-white">
             <div key={current.id} className="animate-in fade-in duration-300">
-              <h3 className="font-heading font-bold text-2xl lg:text-3xl text-white">{current.heading}</h3>
+              <h3 className="font-heading font-bold text-2xl lg:text-3xl text-white text-balance">{current.heading}</h3>
               <p className="mt-4 text-white/90 text-[17px] leading-[1.65]">{current.body}</p>
               {current.bullets ? (
                 <ul className="mt-6 space-y-3">
@@ -71,14 +71,14 @@ export function WhyEMSTabs() {
                 </ul>
               ) : null}
             </div>
-            <div className="relative">
+            <div className="relative flex items-center justify-center">
               <Image
                 key={current.imageSrc}
                 src={current.imageSrc}
                 alt={current.imageAlt}
                 width={900}
                 height={900}
-                className="w-full rounded-xl shadow-2xl animate-in fade-in duration-300"
+                className="w-full max-w-xs lg:max-w-sm rounded-xl shadow-2xl animate-in fade-in duration-300"
               />
             </div>
           </div>
