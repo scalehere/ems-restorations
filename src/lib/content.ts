@@ -53,6 +53,8 @@ export const testimonials: Testimonial[] = [
   {
     name: "Maria G.",
     initial: "M",
+    location: "Chula Vista, CA",
+    project: "Water Damage Restoration",
     daysAgo: "1 week ago",
     rating: 5,
     text: "EMS Restoration handled everything after our kitchen pipe burst — insurance paperwork, drying, repairs. Zero out of pocket. They were at our house within hours and kept us informed the entire time.",
@@ -60,6 +62,8 @@ export const testimonials: Testimonial[] = [
   {
     name: "James T.",
     initial: "J",
+    location: "El Cajon, CA",
+    project: "Fire & Smoke Restoration",
     daysAgo: "2 weeks ago",
     rating: 5,
     text: "My adjuster lowballed us on a fire damage claim. EMS came in, re-documented everything, and got us nearly double the original offer. Veteran-owned and it shows — disciplined, no-nonsense, excellent work.",
@@ -67,6 +71,8 @@ export const testimonials: Testimonial[] = [
   {
     name: "Sandra L.",
     initial: "S",
+    location: "La Mesa, CA",
+    project: "Mold Remediation",
     daysAgo: "3 weeks ago",
     rating: 5,
     text: "Found mold behind our bathroom wall after a slow leak. EMS had it fully remediated and the wall rebuilt in under a week. Insurance covered it all. These guys know how to document a claim.",
@@ -74,6 +80,8 @@ export const testimonials: Testimonial[] = [
   {
     name: "Robert C.",
     initial: "R",
+    location: "Santee, CA",
+    project: "Water Damage Restoration",
     daysAgo: "1 month ago",
     rating: 5,
     text: "Called at 11pm after a water heater failed and flooded our garage. EMS was on site by midnight. Fast, professional, and they worked directly with our insurance company so we didn't have to deal with the hassle.",
@@ -199,6 +207,7 @@ export const services: ServiceCard[] = [
     imageSrc: "/images/services/remodel-kitchen-showcase.jpg",
     imageAlt: "EMS Restoration Kitchen Remodels",
     sectionHref: "#remodeling",
+    remodelSectionHref: "#kitchen",
   },
   {
     title: "Bathroom Remodels",
@@ -206,6 +215,7 @@ export const services: ServiceCard[] = [
     imageSrc: "/images/services/remodel-bathroom-finished.jpg",
     imageAlt: "EMS Restoration Bathroom Remodels",
     sectionHref: "#remodeling",
+    remodelSectionHref: "#bathroom",
   },
   {
     title: "Home Additions",
@@ -213,6 +223,7 @@ export const services: ServiceCard[] = [
     imageSrc: "/images/services/remodel-home-addition-exterior.jpg",
     imageAlt: "EMS Restoration completed home addition — expanded living space",
     sectionHref: "#remodeling",
+    remodelSectionHref: "#room-additions",
   },
   {
     title: "ADU Builds",
@@ -220,6 +231,7 @@ export const services: ServiceCard[] = [
     imageSrc: "/images/services/adu-cottage-exterior.jpg",
     imageAlt: "Finished ADU cottage exterior — compact residential unit with green surroundings",
     sectionHref: "#remodeling",
+    remodelSectionHref: "#room-additions",
   },
   {
     title: "Property Cleanup & Sanitization",

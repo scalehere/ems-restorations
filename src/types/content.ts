@@ -18,6 +18,8 @@ export interface Testimonial {
   text: string;
   avatarUrl?: string;
   initial?: string;
+  location?: string;
+  project?: string;
 }
 
 
@@ -52,6 +54,7 @@ export interface ServiceCard {
   imageSrc: string;
   imageAlt: string;
   sectionHref?: string;
+  remodelSectionHref?: string;
   cardId?: string;
 }
 

@@ -33,6 +33,9 @@ export function Testimonials() {
                 ))}
               </div>
               <p className="mt-3 text-sm leading-relaxed text-navy/90 line-clamp-5">{t.text}</p>
+              {t.project && t.location && (
+                <p className="mt-3 text-xs text-navy/50">{t.project} — {t.location}</p>
+              )}
             </article>
           ))}
         </div>
