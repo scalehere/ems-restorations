@@ -12,7 +12,7 @@ export function Kitchen() {
           className="w-full rounded-2xl shadow-xl order-first lg:order-none"
         />
         <div>
-          <h2 className="font-heading font-bold text-3xl lg:text-[40px] leading-[1.15]">
+          <h2 className="font-heading font-bold text-3xl lg:text-[40px] leading-[1.15] text-balance">
             Kitchen Remodeling
           </h2>
           <div className="mt-6 space-y-4 text-[18px] leading-[1.6]">

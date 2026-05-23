@@ -6,7 +6,7 @@ export function RestorationTieIn() {
     <section id="services" className="bg-white py-16 lg:py-20 scroll-mt-[var(--nav-offset)]">
       <div className="mx-auto max-w-[1200px] px-6 text-center">
         <span className="section-bubble">Restoration Services</span>
-        <h2 className="mt-5 font-heading font-bold text-3xl lg:text-[40px] leading-[1.15] max-w-3xl mx-auto">
+        <h2 className="mt-5 font-heading font-bold text-3xl lg:text-[40px] leading-[1.15] max-w-3xl mx-auto text-balance">
           Your Remodel Uncovered a Problem? We Handle That Too.
         </h2>
         <p className="mt-5 max-w-3xl mx-auto text-[18px] leading-[1.6]">

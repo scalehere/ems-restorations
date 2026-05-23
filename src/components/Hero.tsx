@@ -18,7 +18,7 @@ export function Hero() {
 
       <div className="mx-auto max-w-[1200px] px-6 py-20 lg:py-28 grid lg:grid-cols-[1.05fr_1fr] gap-12 items-center">
         <div className="text-white">
-          <h1 className="font-heading font-extrabold text-3xl md:text-4xl lg:text-[44px] leading-[1.15] text-white">
+          <h1 className="font-heading font-extrabold text-3xl md:text-4xl lg:text-[44px] leading-[1.15] text-white text-balance">
             San Diego&rsquo;s Restoration Team — We Work Directly With Your Insurance Company, Start to Finish
           </h1>
 

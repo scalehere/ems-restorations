@@ -30,7 +30,7 @@ export function Gallery() {
       <div className="mx-auto max-w-[1200px] px-6">
         <div className="text-center">
           <span className="section-bubble">Gallery</span>
-          <h2 className="mt-5 font-heading font-bold text-3xl lg:text-[40px] leading-[1.15] max-w-3xl mx-auto">
+          <h2 className="mt-5 font-heading font-bold text-3xl lg:text-[40px] leading-[1.15] max-w-3xl mx-auto text-balance">
             Before &amp; After — Our Work Speaks for Itself.
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-base text-navy/80">

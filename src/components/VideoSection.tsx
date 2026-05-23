@@ -31,7 +31,7 @@ export function VideoSection() {
           <span className="inline-block bg-[var(--orange-accent)] text-white text-xs font-heading font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">
             Real Client Story
           </span>
-          <h2 className="font-heading font-bold text-3xl lg:text-[40px] leading-[1.15]">
+          <h2 className="font-heading font-bold text-3xl lg:text-[40px] leading-[1.15] text-balance">
             Her Home Was Devastated. We Coordinated With Her Insurance Company and Had It Fully Restored.
           </h2>
           <p className="mt-5 text-[17px] leading-[1.6] text-gray-600">

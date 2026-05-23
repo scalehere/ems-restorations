@@ -5,7 +5,7 @@ export function Overview() {
     <section id="water-damage" className="bg-white py-16 lg:py-20 scroll-mt-[var(--nav-offset)]">
       <div className="mx-auto max-w-[1200px] px-6 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <div>
-          <h2 className="font-heading font-bold text-3xl lg:text-[40px] leading-[1.15]">
+          <h2 className="font-heading font-bold text-3xl lg:text-[40px] leading-[1.15] text-balance">
             San Diego Water Damage Restoration — Responded to in Hours, Not Days
           </h2>
           <div className="mt-6 space-y-4 text-[18px] leading-[1.6]">
