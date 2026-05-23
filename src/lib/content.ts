@@ -21,7 +21,7 @@ export const navLinks: NavLink[] = [
       { label: "Mold Remediation", href: "#mold-remediation" },
       { label: "Fire & Smoke Damage Restoration", href: "#fire-smoke" },
       { label: "Home Remodeling & Construction", href: "#remodeling" },
-      { label: "Biohazard Cleanup", href: "#biohazard" },
+      { label: "Property Cleanup & Sanitization", href: "#biohazard" },
     ],
   },
   {
@@ -37,7 +37,7 @@ export const navLinks: NavLink[] = [
 ];
 
 export const heroBullets = [
-  "Over 1,000 Insurance Claims Handled",
+  "Over 1,000 Restoration Projects Completed",
   "Free Estimates & Quotes",
   "Licensed CA #1081134",
   "Veteran-Owned | 24/7 Emergency Response",
@@ -139,15 +139,15 @@ export const tabContents: TabContent[] = [
 export const stats: Stat[] = [
   { number: "1,000+", label: "Insurance Claims Handled" },
   { number: "24/7", label: "Emergency Response Available" },
-  { number: "$0", label: "Out-of-Pocket Goal on Covered Claims" },
+  { number: "Same-Day", label: "Response" },
   { number: "100%", label: "Satisfaction Guaranteed" },
 ];
 
 export const faqs: FaqItem[] = [
   {
-    question: "How do I know if my damage is covered by insurance?",
+    question: "Do you work with my insurance company?",
     answer:
-      "Most homeowner policies cover sudden and accidental water damage — burst pipes, appliance failures, storm intrusion — as well as fire and smoke damage. Some mold resulting from a covered event is also eligible. Don't file on your own. Call us first. We review your policy and document your damage to maximize what you recover.",
+      "Yes — coordinating directly with your insurance provider is a core part of what we do. We document your damage, communicate with your adjuster, and handle the paperwork so you don't have to. Our goal is to make the process as smooth as possible from the first call to the final walkthrough.",
   },
   {
     question: "How fast can EMS Restoration respond?",
@@ -222,8 +222,8 @@ export const services: ServiceCard[] = [
     sectionHref: "#remodeling",
   },
   {
-    title: "Biohazard Cleanup",
-    description: "Safe, discreet, and thorough biohazard and trauma scene cleanup handled by trained specialists following all regulatory standards.",
+    title: "Property Cleanup & Sanitization",
+    description: "Safe, discreet, and thorough property cleanup and sanitization handled by trained specialists following all regulatory standards.",
     imageSrc: "/images/services/hazmat-tech-fogging-interior.jpg",
     imageAlt: "Hazmat-suited technician performing professional biohazard cleanup",
     cardId: "biohazard",
@@ -246,7 +246,7 @@ export const footerColumns = [
       { type: "link" as const, label: "Mold Remediation", href: "#mold-remediation" },
       { type: "link" as const, label: "Fire & Smoke Restoration", href: "#fire-smoke" },
       { type: "link" as const, label: "Home Remodeling", href: "#remodeling" },
-      { type: "link" as const, label: "Biohazard Cleanup", href: "#services" },
+      { type: "link" as const, label: "Property Cleanup & Sanitization", href: "#services" },
     ],
   },
   {

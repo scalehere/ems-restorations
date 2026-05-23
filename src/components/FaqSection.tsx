@@ -22,7 +22,7 @@ export function FaqSection() {
       <div className="mx-auto max-w-[1200px] px-6 text-center">
         <span className="section-bubble">FAQ</span>
         <h2 className="mt-5 font-heading font-bold text-3xl lg:text-[40px] leading-[1.15] max-w-3xl mx-auto">
-          Frequently Asked Questions About Restoration &amp; Insurance Claims
+          Frequently Asked Questions About Restoration &amp; Insurance
         </h2>
         <p className="mt-5 max-w-3xl mx-auto text-[18px] leading-[1.6]">
           We know restoration and insurance claims can feel overwhelming. Here are answers to the questions San Diego homeowners ask us most. Don&rsquo;t see yours? Call us directly — we&rsquo;re available 24/7.
