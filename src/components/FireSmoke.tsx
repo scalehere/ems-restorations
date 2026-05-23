@@ -5,7 +5,7 @@ export function FireSmoke() {
     <section id="fire-smoke" className="bg-muted py-16 lg:py-20 scroll-mt-[var(--nav-offset)]">
       <div className="mx-auto max-w-[1200px] px-6 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <div>
-          <h2 className="font-heading font-bold text-3xl lg:text-[40px] leading-[1.15]">
+          <h2 className="font-heading font-bold text-3xl lg:text-[40px] leading-[1.15] text-balance">
             When the Fire Is Out, We&rsquo;re Just Getting Started.
           </h2>
           <div className="mt-6 space-y-4 text-[18px] leading-[1.6]">
@@ -21,7 +21,7 @@ export function FireSmoke() {
               href="#hero-form"
               className="inline-flex items-center justify-center px-7 py-3 rounded-md bg-cyan hover:brightness-95 text-white font-heading font-bold uppercase tracking-wide transition"
             >
-              Get Your Free Fire Damage Assessment
+              Get a Free Assessment
             </a>
           </div>
         </div>

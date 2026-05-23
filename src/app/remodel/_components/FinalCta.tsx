@@ -5,7 +5,7 @@ export function FinalCta() {
   return (
     <section className="bg-white py-16 lg:py-20">
       <div className="mx-auto max-w-3xl px-6 text-center">
-        <h2 className="font-heading font-bold text-2xl lg:text-3xl leading-[1.25]">
+        <h2 className="font-heading font-bold text-2xl lg:text-3xl leading-[1.25] text-balance">
           Ready to Finally Get It Done Right?
         </h2>
         <p className="mt-5 text-[18px] leading-[1.6]">

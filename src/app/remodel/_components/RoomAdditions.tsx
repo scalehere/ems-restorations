@@ -5,7 +5,7 @@ export function RoomAdditions() {
     <section id="room-additions" className="bg-muted py-16 lg:py-20 scroll-mt-[var(--nav-offset)]">
       <div className="mx-auto max-w-[1200px] px-6 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <div>
-          <h2 className="font-heading font-bold text-3xl lg:text-[40px] leading-[1.15]">
+          <h2 className="font-heading font-bold text-3xl lg:text-[40px] leading-[1.15] text-balance">
             Room Additions &amp; ADUs
           </h2>
           <div className="mt-6 space-y-4 text-[18px] leading-[1.6]">
@@ -36,7 +36,7 @@ export function RoomAdditions() {
               href="#hero-form"
               className="inline-flex items-center justify-center px-7 py-3 rounded-md bg-navy hover:bg-navy-light text-white font-heading font-bold uppercase tracking-wide transition"
             >
-              Get an ADU or Addition Estimate
+              Get a Free Estimate
             </a>
           </div>
         </div>

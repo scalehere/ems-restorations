@@ -7,7 +7,7 @@ export function Testimonials() {
       <div className="mx-auto max-w-[1200px] px-6">
         <div className="text-center">
           <span className="section-bubble">Testimonials</span>
-          <h2 className="mt-5 font-heading font-bold text-3xl lg:text-[40px] leading-[1.15] max-w-3xl mx-auto">
+          <h2 className="mt-5 font-heading font-bold text-3xl lg:text-[40px] leading-[1.15] max-w-3xl mx-auto text-balance">
             Hear What San Diego Homeowners Say About EMS Restoration
           </h2>
         </div>
