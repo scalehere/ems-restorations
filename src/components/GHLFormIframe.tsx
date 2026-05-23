@@ -7,10 +7,10 @@ const GHL_ORIGIN = 'https://api.leadconnectorhq.com';
 const GHL_FORM_BASE = 'https://api.leadconnectorhq.com/widget/form/EEJ792UCw3hfLSrTfLyQ';
 
 interface GHLFormIframeProps {
-  initialInquiry?: 'restoration' | 'rebuilding';
+  funnelInterest?: 'restoration' | 'rebuilding';
 }
 
-export function GHLFormIframe({ initialInquiry }: GHLFormIframeProps = {}) {
+export function GHLFormIframe({ funnelInterest }: GHLFormIframeProps = {}) {
   useEffect(() => {
     function handleMessage(event: MessageEvent) {
       if (event.origin !== GHL_ORIGIN) return;
@@ -28,8 +28,8 @@ export function GHLFormIframe({ initialInquiry }: GHLFormIframeProps = {}) {
     return () => window.removeEventListener('message', handleMessage);
   }, []);
 
-  const src = initialInquiry
-    ? `${GHL_FORM_BASE}?initial_inquiry=${encodeURIComponent(initialInquiry)}`
+  const src = funnelInterest
+    ? `${GHL_FORM_BASE}?funnel_interest=${encodeURIComponent(funnelInterest)}`
     : GHL_FORM_BASE;
 
   return (
